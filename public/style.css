@@ -21,7 +21,7 @@ body{
 
 p{
     font-family: "Roboto", sans-serif;
-    color: var(--secondary-text-color);
+    color: black;
     line-height: 1.4rem;
 
 }
@@ -31,7 +31,7 @@ ul{
 }
 
 .container{                         
-   max-width: 1180px;
+   max-width: 1200px;
    margin-inline: auto;
    overflow:hidden;
 
@@ -44,12 +44,14 @@ ul{
 }
 
 nav{
-    background-color: var(--secondary-text-color);
+    background-color: #1F2937;
+    font-size:larger;
     position: fixed;
     left:0;
     right: 0;
     top: 0;
     z-index: 99;
+    color: lightgray;
 
 
 }
@@ -69,10 +71,10 @@ ul{
 }
 
 .hover-link:hover{
-    color: beige
+    color: #F59E0B;
 }
 .hover-link:active{
-color: white;
+color: #F59E0B;
 }
 
 .nav-item.active {
@@ -80,25 +82,31 @@ color: white;
 }
 
 .search-bar{
-    height: 32px;
+    height: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+    border-radius: 10px;
+}
+
+.search-text{
+    border-radius: 10px;
 }
 
 main{
-    padding-block: 20px;
-    margin: 40px;
+    
     margin-top: 80px;
+    background-color:lightgrey;
 
 
 }
 
 .cards-container{
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:24px;
+    justify-content: center;
+    padding: 3ch;
 }
 
 
@@ -107,15 +115,24 @@ main{
 .card{
     width: 360px;
     cursor: pointer;
+    padding: 2ch;
+    border-radius: 20px;
+   
 
 }
 
 .card-header img{
     width: 360px;
+    border-radius: 10px;
 }
 
 .card:hover {
-    box-shadow: 1px 2px 8px #2A9D8F;
-    transform: translateY(-2px)
+  box-shadow: 1px 2px 8px black;
+  transform: translateY(-1px);
+}
+
+#logo{
+    height: 75px;
+    border-radius: 10px;
 }
 
