@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #264653;
+    --secondary-text-color: #2A9D8F;
+    --accent-color: #E9C46A;
+    --accent-color-dark: #E76F51;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color:black;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.container{                         
+   max-width: 1180px;
+   margin-inline: auto;
+   overflow:hidden;
+
+}
+
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+nav{
+    background-color: var(--secondary-text-color);
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+
+
+}
+
+.main-nav{
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: beige
+}
+.hover-link:active{
+color: white;
+}
+
+.nav-item.active {
+     color: var(--accent-color);
+}
+
+.search-bar{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main{
+    padding-block: 20px;
+    margin: 40px;
+    margin-top: 80px;
+
+
+}
+
+.cards-container{
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+
+
+
+.card{
+    width: 360px;
+    cursor: pointer;
+
+}
+
+.card-header img{
+    width: 360px;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 8px #2A9D8F;
+    transform: translateY(-2px)
+}
+

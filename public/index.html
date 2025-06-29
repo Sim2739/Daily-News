@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#" onclick="reload()">
+                <img src="" alt="company logo">
+            </a>
+
+        <div class="nav-links">
+            <ul>
+                <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="hover-link nav-item" id="finance"  onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="politics"  onclick="onNavItemClick('politics')">Politics</li>
+                
+            </ul>
+        </div>
+
+    
+        <div class="search-bar">
+            <input id="search-text" type="text"  class="news-input" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container flex container" id="cards-container" >
+           
+    </main>
+
+    <template class="news-card" id="news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h3 id="news-source">End Gadget 12/08/2024</h3>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore magni assumenda itaque, consectetur quo voluptatum voluptate minima quas ut ullam consequuntur porro at et pariatur perferendis adipisci eligendi veniam!</p>
+            </div>
+        </div>
+    </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
